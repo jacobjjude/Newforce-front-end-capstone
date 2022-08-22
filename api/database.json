@@ -1,0 +1,120 @@
+{
+	"users": [
+		{
+			"id": 1,
+			"name": "Trent Christiansen",
+			"email": "test@testing.com",
+			"isBartender": true
+		},
+		{
+			"id": 2,
+			"name": "Lia Runolfsdottir",
+			"email": "FTP@testing.com",
+			"isBartender": false
+		},
+		{
+			"id": 3,
+			"name": "Constance O'Hara",
+			"email": "bandwidth@testing.com",
+			"isBartender": true
+		},
+		{
+			"id": 4,
+			"name": "Genevieve Brekke",
+			"email": "bypass@testing.com",
+			"isBartender": false
+		}
+	],
+	"alcohols": [
+		{
+			"id": 1,
+			"name": "Irish Whiskey"
+		},
+		{
+			"id": 2,
+			"name": "Rum"
+		},
+		{
+			"id": 3,
+			"name": "Tequila"
+		}
+	],
+	"cocktails": [
+		{
+			"id": 1,
+			"alcoholId": 1,
+			"ingredients": "1.5 oz. Blackberry/Mint syrup\n1.5oz. Jameson's\nGinger Beer",
+			"instructions": "Build in glass over fresh ice, stir.",
+			"glass": "Julep",
+			"name": "Irish Hello",
+			"isApproved": true,
+			"approvedBy": 2,
+			"submittedBy": 1,
+			"garnish": "Mint Sprig",
+			"flavorId": 3
+		},
+		{
+			"id": 2,
+			"alcoholId": 2,
+			"ingredients": "1.5 oz. Pineapple Juice\n0.5 oz. Simple Syrup\n0.5 oz. Lime Juice\n0.5 oz. Triple Sec\n0.5 oz. Aperol\n1.5 oz Don Q rum\n2 dashes Angestora bitters",
+			"instructions": "Combine ingredients in mixing glass with ice, shake and strain into glass over fresh ice",
+			"glass": "Julep",
+			"name": "Sunset Strip",
+			"isApproved": true,
+			"approvedBy": 3,
+			"submittedBy": 1,
+			"garnish": "Orange Slice",
+			"flavorId": 1
+		},
+		{
+			"id": 3,
+			"alcoholId": 3,
+			"ingredients": "1.5 oz. Honey Syrup\n1 oz. Lemon Juice\n0.5 oz. Triple sec\n1.5oz Casamigos Tequla\n2 fresh thyme sprigs",
+			"instructions": "Combine ingredients in mixing glass with ice, shake and strain into glass over fresh ice",
+			"glass": "Double Old Fashioned",
+			"name": "Tequila Thyme",
+			"isApproved": true,
+			"approvedBy": 1,
+			"submittedBy": 4,
+			"garnish": "Lemon Wheel",
+			"flavorId": 4
+		}
+	],
+	"myDrinks": [
+		{
+			"id": 1,
+			"userId": 1,
+			"cocktailId": 3
+		}
+	],
+	"flavors": [
+		{
+			"id": 1,
+			"name": "Fruity"
+		},
+		{
+			"id": 2,
+			"name": "Sweet"
+		},
+		{
+			"id": 3,
+			"name": "Mint"
+		},
+		{
+			"id": 4,
+			"name": "Boozy"
+		},
+		{
+			"id": 5,
+			"name": "Sour"
+		},
+		{
+			"id": 6,
+			"name": "Bitter"
+		},
+		{
+			"id": 7,
+			"name": "Salty"
+		}
+	]
+}
