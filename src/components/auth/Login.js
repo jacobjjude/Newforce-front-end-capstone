@@ -20,7 +20,7 @@ export const Login = () => {
                     id: user.id
                 }))
 
-                navigate('/home')
+                navigate('/')
             }
             else {
                 window.alert("Invalid Login")
