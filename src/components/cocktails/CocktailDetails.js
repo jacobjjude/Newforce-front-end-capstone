@@ -34,6 +34,7 @@ export const CocktailDetails = () => {
             <ul>Garnish
                 <li>{cocktail.garnish}</li>
             </ul>
+            <footer><button>Add to Favorites</button></footer>
         </section>
         </>
     )
