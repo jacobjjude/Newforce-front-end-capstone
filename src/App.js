@@ -10,6 +10,7 @@ export const Cocktail = () => {
   return <Routes>
     <Route path="/login" element={< Login/>}></Route>
     <Route path="/register" element={< Register/>}></Route>
+    
 
     <Route path="*" element={
       <Authorized>
