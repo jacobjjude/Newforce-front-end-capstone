@@ -31,7 +31,7 @@
       "id": 5
     }
   ],
-  "alcohols": [
+  "alcohol": [
     {
       "id": 1,
       "name": "Irish Whiskey"
@@ -48,8 +48,12 @@
   "cocktails": [
     {
       "id": 1,
-      "alcoholId": 1,
-      "ingredients": "1.5 oz. Blackberry/Mint syrup\n1.5oz. Jameson's\nGinger Beer",
+      "alcoholId": 2,
+      "ingredients": [
+        "1.5 oz. Blackberry/Mint syrup",
+        "1.5oz. Jameson's",
+        "Ginger Beer"
+      ],
       "instructions": "Build in glass over fresh ice, stir.",
       "glass": "Julep",
       "name": "Irish Hello",
@@ -61,8 +65,16 @@
     },
     {
       "id": 2,
-      "alcoholId": 2,
-      "ingredients": "1.5 oz. Pineapple Juice\n0.5 oz. Simple Syrup\n0.5 oz. Lime Juice\n0.5 oz. Triple Sec\n0.5 oz. Aperol\n1.5 oz Don Q rum\n2 dashes Angestora bitters",
+      "alcoholId": 1,
+      "ingredients": [
+        "1.5 oz. Pineapple Juice",
+        "0.5 oz. Simple Syrup",
+        "0.5 oz. Lime Juice",
+        "0.5 oz. Triple Sec",
+        "0.5 oz. Aperol",
+        "1.5 oz Don Q rum",
+        "2 dashes Angestora bitters"
+      ],
       "instructions": "Combine ingredients in mixing glass with ice, shake and strain into glass over fresh ice",
       "glass": "Julep",
       "name": "Sunset Strip",
@@ -75,7 +87,13 @@
     {
       "id": 3,
       "alcoholId": 3,
-      "ingredients": "1.5 oz. Honey Syrup\n1 oz. Lemon Juice\n0.5 oz. Triple sec\n1.5oz Casamigos Tequla\n2 fresh thyme sprigs",
+      "ingredients": [
+        "1.5 oz. Honey Syrup",
+        "1 oz. Lemon Juice",
+        "0.5 oz. Triple sec",
+        "1.5oz Casamigos Tequla",
+        "2 fresh thyme sprigs"
+      ],
       "instructions": "Combine ingredients in mixing glass with ice, shake and strain into glass over fresh ice",
       "glass": "Double Old Fashioned",
       "name": "Tequila Thyme",
@@ -84,6 +102,24 @@
       "submittedBy": 4,
       "garnish": "Lemon Wheel",
       "flavorId": 4
+    },
+    {
+      "alcoholId": 3,
+      "ingredients": [
+        "1.5 oz tequila",
+        "1.5 oz triple sec",
+        "0.5 oz agave syrup",
+        "1.5 oz Orange Juice"
+      ],
+      "instructions": "Build in mixing glass, shake and strain over fresh ice",
+      "glass": "Fish Bowl",
+      "isApproved": false,
+      "approvedBy": 0,
+      "submittedBy": 1,
+      "garnish": "Salt rim",
+      "flavorId": 1,
+      "name": "Margarita",
+      "id": 4
     }
   ],
   "myDrinks": [
@@ -104,7 +140,7 @@
     },
     {
       "id": 3,
-      "name": "Mint"
+      "name": "Minty"
     },
     {
       "id": 4,
