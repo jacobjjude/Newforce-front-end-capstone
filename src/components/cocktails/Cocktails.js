@@ -26,7 +26,7 @@ export const Cocktails = () => {
                     <footer>
                         <ul>
                             <li>{cocktail?.flavor?.name}</li>
-                            <li>{cocktail?.alcohol.name}</li>
+                            <li>{cocktail?.alcohol?.name}</li>
                             <li><button>Add to Favorites</button></li>
                         </ul>
                     </footer>

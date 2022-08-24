@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
+import './Submit.css'
 
 export const Submit = () => {
     const [cocktail, update] = useState({
@@ -14,6 +15,7 @@ export const Submit = () => {
         flavorId: 0,
         name: ""
     })
+    const [counter, setCounter] = useState(2)
     const [flavor, setFlavors] = useState([])
     const [alcohol, setAlcohol] = useState([])
     const navigate = useNavigate()
@@ -41,10 +43,58 @@ export const Submit = () => {
         getAllAlcohol();
         getAllFlavor();
     }, [])
+
+    //function to grab all the ingredient inputs, put them in an array, and joint them into a string separated by "*"
+    const handleIngredients = (event) => {
+        const copy = {...cocktail}
+    }
+
+    useEffect(() => {
+        if (cocktail.ingredients.length > counter){
+            const copy = {...cocktail}
+            copy.ingredients.pop()
+            update(copy)
+        }
+    }, [counter])
+
+    //function to increase and decrease counter, thereby adding another line to ingredients
+    const increaseCount = (event) => {
+        event.preventDefault()
+        return setCounter(counter + 1)
+    }
+
+    const decreaseCount = (event) => {
+        event.preventDefault()
+        return setCounter(counter - 1)
+    }
+
+    //function to populate ingredients input
+    const ingredientInput = () => {
+        let content = []
+        for (let i=0; i<counter; i++) {
+            content.push(<input
+            required autoFocus
+            type="text"
+            key={i}
+            value={cocktail.ingredients[i]}
+            id={`ing-${i}`}
+            class="ingredient"
+            onChange={(evt) => {
+                const copy = {...cocktail}
+
+               copy.ingredients[i] = evt.target.value
+                update(copy)
+            }}
+            ></input>
+            )
+        }
+        return content
+    }
+
     //function to handle save button
     const handleSaveButtonClick = (event) => {
         event.preventDefault()
-
+        
         //cocktail to send to API
         const drinkToSendToAPI = {
             alcoholId: cocktail.alcoholId,
@@ -70,7 +120,8 @@ export const Submit = () => {
             navigate('/')
         })
     }
-
+    
+    
     return (
         <form className="drinkForm">
             <h2>Submit a new recipe!</h2>
@@ -174,7 +225,22 @@ export const Submit = () => {
                         }
                     </select>
                 </div>
+                <div className="ingredients">
+                    <label htmlFor="ingredients">Ingredients: 
+                    </label>
+                    {
+                        ingredientInput()
+                    }
+                    <button onClick={increaseCount}>Add Line</button>
+                    <button onClick={decreaseCount}>Remove Line</button>
+                </div>
             </fieldset>
+            
+            <button
+            onClick={(clickEvent) => {
+                handleSaveButtonClick(clickEvent)
+            }}
+            className="btn btn-primary">Submit Cocktail</button>
         </form>
     )
 }
