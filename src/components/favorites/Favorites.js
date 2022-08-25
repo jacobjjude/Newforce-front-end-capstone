@@ -13,6 +13,12 @@ export const Favorites = () => {
         })
     }, [])
 
+    const removeFromFavorites = (item) => {
+        fetch(`http://localhost:8088/myDrinks/${item.id}`, {
+            method: "DELETE"
+        })
+    }
+
     return (
         <>
         {
@@ -20,7 +26,10 @@ export const Favorites = () => {
                 return (
                 <>
                 <header>{item?.cocktail?.name}</header>
-                <footer><button>Remove from favorites</button></footer>
+                <footer><button onClick={() => {
+                    removeFromFavorites(item);
+                    window.location.reload(false)
+                }}>Remove from favorites</button></footer>
                 </>)
             })
         }
