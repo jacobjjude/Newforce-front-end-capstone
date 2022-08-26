@@ -4,6 +4,9 @@ import { Favorites } from "../favorites/Favorites";
 import { Home } from "../home/Home";
 import { Submit } from "../submit/Submit";
 import { CocktailDetails } from '../cocktails/CocktailDetails'
+import { ApprovalList } from "../approval/ApprovalList";
+import { ApproveEdit } from "../approval/ApproveEdit";
+import './views.css'
 
 export const ApplicationViews = () => {
     return (
@@ -13,6 +16,8 @@ export const ApplicationViews = () => {
             <Route path="/submit" element={<Submit />}></Route>
             <Route path="/favorites" element={<Favorites />}></Route>
             <Route path="cocktails/:cocktailId" element={<CocktailDetails />}></Route>
+            <Route path="/approve" element={<ApprovalList />}></Route>
+            <Route path="/cocktail/:cocktailId/edit" element={<ApproveEdit />}></Route>
         </Routes>
     )
 }

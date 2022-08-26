@@ -113,20 +113,42 @@
       ],
       "instructions": "Build in mixing glass, shake and strain over fresh ice",
       "glass": "Fish Bowl",
-      "isApproved": false,
-      "approvedBy": 0,
+      "isApproved": true,
+      "approvedBy": 1,
       "submittedBy": 1,
       "garnish": "Salt rim",
       "flavorId": 1,
       "name": "Margarita",
       "id": 4
+    },
+    {
+      "alcoholId": 2,
+      "ingredients": [
+        "1.5 oz bourbon",
+        "sugar cube",
+        "2 dashes angestora bitters"
+      ],
+      "instructions": "Build over ice, stir",
+      "glass": "Old Fashioned",
+      "isApproved": false,
+      "approvedBy": 0,
+      "submittedBy": 1,
+      "garnish": "cherry and/or orange peel",
+      "flavorId": 4,
+      "name": "Old Fashioned",
+      "id": 5
     }
   ],
   "myDrinks": [
     {
-      "id": 1,
       "userId": 1,
-      "cocktailId": 3
+      "cocktailId": 4,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "cocktailId": 3,
+      "id": 5
     }
   ],
   "flavors": [

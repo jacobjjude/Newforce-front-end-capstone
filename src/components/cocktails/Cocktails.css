@@ -1,4 +1,45 @@
 #ingredients {
 	display: flex;
+	flex-direction: column;
+}
+
+.cocktail__list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 16px;
+    justify-content: space-evenly;
+}
+
+.cocktail__item {
+	display: flex;
+    background-color: #5F8592;
     flex-direction: column;
+    width: 40%;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 25px;
+}
+
+.cocktail__container {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.cocktail__footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cocktail__flavor {
+    background-color: #86711E;
+    padding: 8px;
+    color: #EEE5DE;
+    border-radius: 8px
+}
+
+.cocktail__alcohol {
+    background-color: #F19472;
+    padding: 5px;
+    color: #EEE5DE;
+    border-radius: 8px
 }
