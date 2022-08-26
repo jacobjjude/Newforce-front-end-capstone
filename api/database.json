@@ -113,8 +113,8 @@
       ],
       "instructions": "Build in mixing glass, shake and strain over fresh ice",
       "glass": "Fish Bowl",
-      "isApproved": false,
-      "approvedBy": 0,
+      "isApproved": true,
+      "approvedBy": 1,
       "submittedBy": 1,
       "garnish": "Salt rim",
       "flavorId": 1,
@@ -142,22 +142,12 @@
   "myDrinks": [
     {
       "userId": 1,
-      "cocktailId": 1,
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "cocktailId": 3,
+      "cocktailId": 4,
       "id": 3
     },
     {
       "userId": 1,
-      "cocktailId": 4,
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "cocktailId": 5,
+      "cocktailId": 3,
       "id": 5
     }
   ],

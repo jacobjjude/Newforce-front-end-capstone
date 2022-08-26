@@ -28,6 +28,8 @@ export const Favorites = () => {
                 <header>{item?.cocktail?.name}</header>
                 <footer><button onClick={() => {
                     removeFromFavorites(item);
+                    //Change this .get and set state.
+                    //Same in cocktails.js
                     window.location.reload(false)
                 }}>Remove from favorites</button></footer>
                 </>)
