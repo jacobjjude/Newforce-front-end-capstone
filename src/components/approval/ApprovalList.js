@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import './Approval.css'
 
 export const ApprovalList = () => {
     const [notApproved, setNotApproved] = useState([])
@@ -12,12 +13,13 @@ export const ApprovalList = () => {
     }, [])
     return (
         <>
-        <h1>It Works!</h1>
+        <div className="unapproved__container">
+            <h2>Unapproved cocktails</h2>
         {
             notApproved.map(item => {
                 return (
                     <>
-                    <div>
+                    <div className="unapproved__card">
                         <h4>{item.name}</h4>
                         <footer>
                             <Link to={`/cocktail/${item.id}/edit`}><button>Edit/Approve</button></Link>
@@ -27,6 +29,7 @@ export const ApprovalList = () => {
                 )
             })
         }
+        </div>
         </>
     )
 }

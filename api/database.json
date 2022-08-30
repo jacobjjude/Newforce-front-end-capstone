@@ -143,12 +143,27 @@
     {
       "userId": 1,
       "cocktailId": 4,
-      "id": 3
+      "id": 4
     },
     {
       "userId": 1,
       "cocktailId": 3,
-      "id": 5
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "cocktailId": 2,
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "cocktailId": 1,
+      "id": 11
+    },
+    {
+      "userId": 2,
+      "cocktailId": 3,
+      "id": 12
     }
   ],
   "flavors": [

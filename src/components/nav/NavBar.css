@@ -3,13 +3,13 @@
 	flex-wrap: nowrap;
 	justify-content: left;
     align-items: center;
-	background-color: #EEE5DE;
+	background-color: #03045E;
 	text-decoration: none;
     position: sticky;
     top: 0;
     width: 100%;
     margin: 0;
-    height: 3rem;
+    height: 3.5rem;
 }
 
 .navbar__item {
@@ -18,7 +18,7 @@
 }
 
 .navbar__link {
-    color: #35362E;
+    color: #CAF0F8;
 }
 
 .navbar__logout {

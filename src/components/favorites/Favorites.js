@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
+import './Favorites.css'
 
 export const Favorites = () => {
     const [favorites, setFavorites] = useState([])
@@ -21,20 +23,24 @@ export const Favorites = () => {
 
     return (
         <>
+        <div className="favorites__container">
         {
             favorites.map(item => {
                 return (
                 <>
-                <header>{item?.cocktail?.name}</header>
+                <div className="favorites__card">
+                <header><Link to={`/cocktails/${item.cocktailId}`}>{item?.cocktail?.name}</Link></header>
                 <footer><button onClick={() => {
                     removeFromFavorites(item);
                     //Change this .get and set state.
                     //Same in cocktails.js
                     window.location.reload(false)
                 }}>Remove from favorites</button></footer>
+                </div>
                 </>)
             })
         }
+        </div>
         </>
     )
 }

@@ -123,7 +123,9 @@ export const Submit = () => {
     
     
     return (
-        <form className="drinkForm">
+
+        <div className="drink__container">
+        <form className="drink__form">
             <h2>Submit a new recipe!</h2>
             <fieldset>
                 <div>
@@ -242,6 +244,7 @@ export const Submit = () => {
             }}
             className="btn btn-primary">Submit Cocktail</button>
         </form>
+    </div>
     )
 }
 

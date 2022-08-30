@@ -16,7 +16,8 @@ export const CocktailDetails = () => {
     },[])
     return (
         <>
-        <section>
+        <div className="details__main">
+        <section className="details__card">
             <header>{cocktail.name}</header>
             <ul>Ingredients
                 {
@@ -34,8 +35,8 @@ export const CocktailDetails = () => {
             <ul>Garnish
                 <li>{cocktail.garnish}</li>
             </ul>
-            <footer><button>Add to Favorites</button></footer>
         </section>
+        </div>
         </>
     )
 }

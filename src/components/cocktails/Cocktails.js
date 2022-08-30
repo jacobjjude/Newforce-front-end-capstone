@@ -67,7 +67,7 @@ export const Cocktails = () => {
                             <p className="footer cocktail__alcohol">{cocktail?.alcohol?.name}</p>
                             {
                                 (!isFavorited(cocktail))
-                                ?<p className="footer cocktail__button"><button onClick={() => {
+                                ?<p><button className="footer cocktail__button" onClick={() => {
                                     addToFavorites(cocktail);
                                     window.location.reload(false)
                                 }}>Add to Favorites</button></p>
@@ -83,7 +83,7 @@ export const Cocktails = () => {
         }
         </div>
         {
-            (!activeCocktailUser.isBartender)
+            (activeCocktailUser.bartender)
             ? < Approve/>
             : ""
         }

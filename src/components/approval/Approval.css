@@ -1,0 +1,31 @@
+.edit__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.edit__form {
+    padding: 3rem;
+    border-radius: 50px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.6),
+    5px 5px 10px rgba(0,0,0, 0.3);
+}
+.form__ingredients {
+    display: flex;
+    flex-direction: column;
+}
+
+.unapproved__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.unapproved__card {
+    margin-top: 2rem;
+    padding: 3rem;
+    border-radius: 50px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.6),
+    5px 5px 10px rgba(0,0,0, 0.3);
+}
