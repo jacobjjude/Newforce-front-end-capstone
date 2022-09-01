@@ -6,6 +6,7 @@
 .cocktail__list {
 	display: flex;
 	flex-wrap: wrap;
+    width: 100%;
 	padding: 16px;
     justify-content: space-evenly;
 }
@@ -13,6 +14,8 @@
 .cocktail__item {
 	display: flex;
     background-color: #E0E0E0;
+    min-width: 33%;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 40%;
     padding: 20px;
@@ -33,6 +36,7 @@
 .cocktail__container {
     display: flex;
     margin-top: 2rem;
+    justify-content: space-evenly;
 }
 
 .cocktail__footer {

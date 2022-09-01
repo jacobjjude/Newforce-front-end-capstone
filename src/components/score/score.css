@@ -1,0 +1,36 @@
+.voting {
+    display: flex;
+    margin: 3px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.voting__score {
+    font-size: x-large;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.voting__button__up {
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+.voting__button__up:hover {
+    transition: 0.3s;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.6),
+    5px 5px 10px rgba(0,0,0, 0.3);
+}
+
+.voting__button__down {
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+.voting__button__down:hover {
+    transition: 0.3s;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.6),
+    5px 5px 10px rgba(0,0,0, 0.3);
+}
