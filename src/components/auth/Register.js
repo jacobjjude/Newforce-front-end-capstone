@@ -63,7 +63,7 @@ export const Register = () => {
             <form className="form--login" onSubmit={handleRegister}>
                 <h1 className="h3 mb-3 font-weight-normal">Please Register for Cocktail</h1>
                 <fieldset>
-                    <label htmlFor="name">Full Name</label>
+                    <label htmlFor="name">Full Name: </label>
                     <input onChange={updateUser}
                     id="name"
                     type="text"
@@ -72,7 +72,7 @@ export const Register = () => {
                     required autoFocus/>
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="email"></label>
+                    <label htmlFor="email">Email: </label>
                     <input onChange={updateUser}
                     type="email"
                     id="email"

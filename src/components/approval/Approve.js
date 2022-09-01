@@ -12,7 +12,7 @@ export const Approve = () => {
     },[])
     return (
         <>
-        <div>
+        <div className="cocktail__approval">
             <h1>Hey!</h1>
             <p>There are {notApproved.length} cocktails waiting to be approved!</p>
             <Link to="/approve"><button>Get to approvin'!</button></Link>

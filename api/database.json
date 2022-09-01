@@ -34,7 +34,7 @@
   "alcohol": [
     {
       "id": 1,
-      "name": "Irish Whiskey"
+      "name": "Whiskey"
     },
     {
       "id": 2,
@@ -43,6 +43,18 @@
     {
       "id": 3,
       "name": "Tequila"
+    },
+    {
+      "id": 4,
+      "name": "Gin"
+    },
+    {
+      "id": 5,
+      "name": "Vodka"
+    },
+    {
+      "id": 6,
+      "name": "Brandy"
     }
   ],
   "cocktails": [
@@ -122,7 +134,7 @@
       "id": 4
     },
     {
-      "alcoholId": 2,
+      "alcoholId": 1,
       "ingredients": [
         "1.5 oz bourbon",
         "sugar cube",
@@ -130,25 +142,92 @@
       ],
       "instructions": "Build over ice, stir",
       "glass": "Old Fashioned",
-      "isApproved": false,
-      "approvedBy": 0,
+      "isApproved": true,
+      "approvedBy": 1,
       "submittedBy": 1,
       "garnish": "cherry and/or orange peel",
       "flavorId": 4,
       "name": "Old Fashioned",
       "id": 5
+    },
+    {
+      "alcoholId": 3,
+      "ingredients": [
+        "2 dashes of Angostura bitters",
+        "2 dashes of Orange bitters",
+        "2 dashes of Habanero bitters",
+        "0.5 oz agave syrup",
+        "2 oz Casamigos tequila"
+      ],
+      "instructions": "Built in a shaker glass, stirred, strain",
+      "glass": "Double Old Fashioned",
+      "isApproved": true,
+      "approvedBy": 1,
+      "submittedBy": 1,
+      "garnish": "Orange Peel",
+      "flavorId": 4,
+      "name": "Desparado",
+      "id": 6
+    },
+    {
+      "alcoholId": 5,
+      "ingredients": [
+        "1.5 oz. Passionfruit syrup",
+        "0.5 oz. Lemon juice",
+        "1.5 oz Smirnoff vodka",
+        "Top with soda water"
+      ],
+      "instructions": "Build over fresh ice, stir",
+      "glass": "Collins",
+      "isApproved": false,
+      "approvedBy": 0,
+      "submittedBy": 2,
+      "garnish": "Lemon wedge",
+      "flavorId": 2,
+      "name": "Sunny Daze",
+      "id": 7
     }
   ],
   "myDrinks": [
     {
-      "userId": 1,
-      "cocktailId": 4,
-      "id": 3
+      "userId": 2,
+      "cocktailId": 1,
+      "id": 11
+    },
+    {
+      "userId": 2,
+      "cocktailId": 3,
+      "id": 12
     },
     {
       "userId": 1,
       "cocktailId": 3,
-      "id": 5
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "cocktailId": 2,
+      "id": 21
+    },
+    {
+      "userId": 2,
+      "cocktailId": 2,
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "cocktailId": 4,
+      "id": 24
+    },
+    {
+      "userId": 1,
+      "cocktailId": 6,
+      "id": 25
+    },
+    {
+      "userId": 2,
+      "cocktailId": 6,
+      "id": 26
     }
   ],
   "flavors": [
@@ -179,6 +258,332 @@
     {
       "id": 7,
       "name": "Salty"
+    }
+  ],
+  "scores": [
+    {
+      "id": 1,
+      "userId": 1,
+      "cocktailId": 1,
+      "vote": true
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "cocktailId": 1,
+      "vote": true
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "cocktailId": 1,
+      "vote": false
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": true,
+      "id": 4
+    },
+    {
+      "cocktailId": 2,
+      "userId": 1,
+      "vote": true,
+      "id": 5
+    },
+    {
+      "cocktailId": 3,
+      "userId": 1,
+      "vote": true,
+      "id": 6
+    },
+    {
+      "cocktailId": 4,
+      "userId": 1,
+      "vote": true,
+      "id": 7
+    },
+    {
+      "cocktailId": 4,
+      "userId": 1,
+      "vote": true,
+      "id": 8
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": false,
+      "id": 9
+    },
+    {
+      "cocktailId": 3,
+      "userId": 1,
+      "vote": true,
+      "id": 10
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": true,
+      "id": 11
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": true,
+      "id": 12
+    },
+    {
+      "cocktailId": 3,
+      "userId": 1,
+      "vote": true,
+      "id": 13
+    },
+    {
+      "cocktailId": 3,
+      "userId": 1,
+      "vote": false,
+      "id": 14
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": true,
+      "id": 15
+    },
+    {
+      "cocktailId": 3,
+      "userId": 1,
+      "vote": true,
+      "id": 16
+    },
+    {
+      "cocktailId": 4,
+      "userId": 1,
+      "vote": true,
+      "id": 17
+    },
+    {
+      "cocktailId": 2,
+      "userId": 1,
+      "vote": true,
+      "id": 18
+    },
+    {
+      "cocktailId": 3,
+      "userId": 1,
+      "vote": true,
+      "id": 19
+    },
+    {
+      "cocktailId": 3,
+      "userId": 1,
+      "vote": false,
+      "id": 20
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": true,
+      "id": 21
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": true,
+      "id": 22
+    },
+    {
+      "cocktailId": 2,
+      "userId": 1,
+      "vote": true,
+      "id": 23
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": true,
+      "id": 24
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": true,
+      "id": 25
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": false,
+      "id": 26
+    },
+    {
+      "cocktailId": 2,
+      "userId": 1,
+      "vote": true,
+      "id": 27
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": true,
+      "id": 28
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": true,
+      "id": 29
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": false,
+      "id": 30
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": true,
+      "id": 31
+    },
+    {
+      "cocktailId": 1,
+      "userId": 1,
+      "vote": true,
+      "id": 32
+    },
+    {
+      "cocktailId": 5,
+      "userId": 2,
+      "vote": true,
+      "id": 33
+    },
+    {
+      "cocktailId": 5,
+      "userId": 2,
+      "vote": true,
+      "id": 34
+    },
+    {
+      "cocktailId": 5,
+      "userId": 2,
+      "vote": true,
+      "id": 35
+    },
+    {
+      "cocktailId": 5,
+      "userId": 2,
+      "vote": true,
+      "id": 36
+    },
+    {
+      "cocktailId": 5,
+      "userId": 2,
+      "vote": true,
+      "id": 37
+    },
+    {
+      "cocktailId": 5,
+      "userId": 2,
+      "vote": true,
+      "id": 38
+    },
+    {
+      "cocktailId": 5,
+      "userId": 2,
+      "vote": true,
+      "id": 39
+    },
+    {
+      "cocktailId": 5,
+      "userId": 2,
+      "vote": true,
+      "id": 40
+    },
+    {
+      "cocktailId": 5,
+      "userId": 2,
+      "vote": true,
+      "id": 41
+    },
+    {
+      "cocktailId": 5,
+      "userId": 2,
+      "vote": true,
+      "id": 42
+    },
+    {
+      "cocktailId": 5,
+      "userId": 2,
+      "vote": true,
+      "id": 43
+    },
+    {
+      "cocktailId": 5,
+      "userId": 2,
+      "vote": true,
+      "id": 44
+    },
+    {
+      "cocktailId": 6,
+      "userId": 2,
+      "vote": true,
+      "id": 45
+    },
+    {
+      "cocktailId": 6,
+      "userId": 2,
+      "vote": true,
+      "id": 46
+    },
+    {
+      "cocktailId": 6,
+      "userId": 2,
+      "vote": true,
+      "id": 47
+    },
+    {
+      "cocktailId": 6,
+      "userId": 2,
+      "vote": true,
+      "id": 48
+    },
+    {
+      "cocktailId": 4,
+      "userId": 2,
+      "vote": true,
+      "id": 49
+    },
+    {
+      "cocktailId": 4,
+      "userId": 2,
+      "vote": true,
+      "id": 50
+    },
+    {
+      "cocktailId": 3,
+      "userId": 2,
+      "vote": true,
+      "id": 51
+    },
+    {
+      "cocktailId": 3,
+      "userId": 2,
+      "vote": true,
+      "id": 52
+    },
+    {
+      "cocktailId": 3,
+      "userId": 2,
+      "vote": true,
+      "id": 53
+    },
+    {
+      "cocktailId": 3,
+      "userId": 2,
+      "vote": true,
+      "id": 54
     }
   ]
 }

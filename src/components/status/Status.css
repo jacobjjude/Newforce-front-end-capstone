@@ -1,0 +1,20 @@
+.unapproved {
+    display: flex;
+    max-width: 40%;
+    background-color: #E0E0E0;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px;
+    margin: 16px;
+    border-radius: 50px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.6),
+    5px 5px 10px rgba(0,0,0, 0.3);
+}
+
+.unapproved:hover {
+    transition: 0.2s;
+    box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.6),
+    1px 1px 5px rgba(0,0,0, 0.3),
+    inset -2px -2px 5px rgba(255,255,255,0.6),
+    inset 2px 2px 5px rgba(0,0,0, 0.3);
+}
