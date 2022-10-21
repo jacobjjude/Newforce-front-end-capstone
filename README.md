@@ -9,6 +9,7 @@ As a user you are able to
 - As a bartender, you will be tasked with reviewing and approving submitted recipes.
 
 ## Tools
+
 [x] HTML
 [x] CSS
 [x] JavaScript
