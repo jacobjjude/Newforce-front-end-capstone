@@ -10,10 +10,10 @@ As a user you are able to
 
 ## Tools
 
-[x] HTML
-[x] CSS
-[x] JavaScript
-[x] REACT
+- [x] HTML
+- [x] CSS
+- [x] JavaScript
+- [x] REACT
 
 ## Getting Started with Create React App
 
